@@ -8,14 +8,28 @@
 
     <title>IT | GECG</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2VG6K1WKT0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  gtag('config', 'G-2VG6K1WKT0');
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAmANN9EqvHCBfuEnZerResS6Dbi9xV1Qw",
+    authDomain: "smitkakadiya-75769.firebaseapp.com",
+    projectId: "smitkakadiya-75769",
+    storageBucket: "smitkakadiya-75769.appspot.com",
+    messagingSenderId: "471649198724",
+    appId: "1:471649198724:web:a3bc959faa4d84252198d1",
+    measurementId: "G-ZP346T49TQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 
     
